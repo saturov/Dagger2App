@@ -1,9 +1,12 @@
 package ru.saturov.dagger2app.model;
 
+import javax.inject.Inject;
+
 public class Vehicle {
 
     private Motor motor;
 
+    @Inject
     public Vehicle(Motor motor) {
         this.motor = motor;
     }
